@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Chauhan | Game Designer & Developer</title>
+    <meta name="description"
+        content="Portfolio of Karan Chauhan, a Game Designer and Software Engineer specializing in Phaser.js, AI-assisted development, and interactive experiences.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for icons, will handle with SVG or CDN if needed -->
+    <!-- Using FontAwesome CDN for icons for now, typical helper. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="logo">KC<span class="accent">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Start</a></li>
+            <li><a href="#projects">Quests</a></li>
+            <li><a href="#experience">Levels</a></li>
+            <li><a href="#skills">Stats</a></li>
+            <li><a href="#contact">Connect</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Player 1 Ready</p>
+                <h1 class="glitch-text" data-text="Karan Chauhan">Karan Chauhan</h1>
+                <h2 class="role-text">Software Engineer</h2>
+                <p class="bio">
+                    Software Engineer with experience building end-to-end web and Android applications across design,
+                    development, and deployment.
+                    Strong focus on modular architecture, maintainable systems, and performance driven UI development.
+                    Passionate about translating product ideas into real, user-facing software through structured
+                    development lifecycles.
+                </p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn primary-btn">View Projects <i class="fa-solid fa-code"></i></a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/karan-chauhan-296612265" target="_blank"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/karanchauan05" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="mailto:chauhankaran2305@gmail.com" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Abstract Game Design Visual implemented in CSS/JS -->
+                <div class="controller-anim"></div>
+            </div>
+        </section>
+
+        <!-- Stats / Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <span class="section-tag">#01</span>
+                <h3>Character Stats</h3>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category card">
+                    <h4><i class="fa-solid fa-code"></i> Languages</h4>
+                    <ul class="skill-list">
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category card">
+                    <h4><i class="fa-solid fa-layer-group"></i> Libraries & Frameworks</h4>
+                    <ul class="skill-list">
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Jetpack Compose</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category card">
+                    <h4><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h4>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>Android Studio</li>
+                        <li>VS Code</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category card">
+                    <h4><i class="fa-solid fa-database"></i> Databases</h4>
+                    <ul class="skill-list">
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <span class="section-tag">#02</span>
+                <h3>Mission Log</h3>
+            </div>
+
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #0077b6, #00b4d8);">
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h4>Ocean Amore</h4>
+                            <span class="tag">HTML/CSS/JS</span>
+                        </div>
+                        <p>Resin Product Store. Developed a responsive product showcase website from initial design to
+                            deployment with a focus on modern UI presentation. Implemented animations and interactive
+                            components.</p>
+                        <div class="project-links">
+                            <a href="https://oceanamore.vercel.app/" target="_blank" class="btn-sm">Live Demo <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #232526, #414345);">
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h4>Arcadeium</h4>
+                            <span class="tag">Browser Games</span>
+                        </div>
+                        <p>Browser-Based Arcade Games. Built classic arcade games including Snake, Tic-Tac-Toe, Pong,
+                            and Space Invaders using vanilla JavaScript. Designed reusable gameplay logic and state
+                            management.</p>
+                        <div class="project-links">
+                            <a href="https://arcadeium.vercel.app/" target="_blank" class="btn-sm">Live Demo <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #3a1c71, #d76d77);">
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h4>Vision-Based Identity System</h4>
+                            <span class="tag">MERN Stack</span>
+                        </div>
+                        <p>Full-stack identity verification system using facial recognition workflows. Built modular
+                            backend APIs and a React frontend to support authentication and monitoring use cases.</p>
+                        <div class="project-links">
+                            <span class="btn-sm disabled">Private Project</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #1a1a1a, #2d2d2d);">
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h4>Visa Venture</h4>
+                            <span class="tag">Phaser.js</span>
+                        </div>
+                        <p>A side-scroller runner game focusing on obstacle avoidance and speed-based progression. Built
+                            with AI-assisted code generation.</p>
+                        <div class="project-links">
+                            <a href="https://play.aicade.io/gJ9f6s9FLq2F1OAk" target="_blank" class="btn-sm">Playable
+                                Link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #0f2027, #203a43);">
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h4>Garden of Eden</h4>
+                            <span class="tag">Phaser.js</span>
+                        </div>
+                        <p>Snake game variant with persistent hazards (poisonous apples). Tuned risk-reward mechanics
+                            and difficulty progression.</p>
+                        <div class="project-links">
+                            <a href="https://play.aicade.io/GNl8Mg3NeJdwFLeb" target="_blank" class="btn-sm">Playable
+                                Link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card">
+                    <div class="project-image" style="background: linear-gradient(45deg, #141E30, #243B55);">
+                        <div class="project-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h4>Pixel Racer X</h4>
+                            <span class="tag">Racing</span>
+                        </div>
+                        <p>Top-down retro racing game. Focused on vehicle control, physics, collisions, and track
+                            navigation balance.</p>
+                        <div class="project-links">
+                            <a href="https://play.aicade.io/RNF0dSWImtzxuTzT" target="_blank" class="btn-sm">Playable
+                                Link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience / Education -->
+        <section id="experience" class="timeline-section">
+            <div class="section-header">
+                <span class="section-tag">#03</span>
+                <h3>World progression</h3>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 2025 – Dec 2025</div>
+                    <div class="timeline-content card">
+                        <h4>Android Developer Intern</h4>
+                        <h5>MaMo Technolabs LLP</h5>
+                        <ul style="list-style-type: disc; margin-left: 20px; opacity: 0.9; margin-top: 10px;">
+                            <li>Contributed to production Android applications using Jetpack Compose, focusing on
+                                responsive UI and feature development.</li>
+                            <li>Implemented modular components following MVVM architecture to improve code readability
+                                and long-term maintainability.</li>
+                            <li>Integrated REST APIs and managed asynchronous state updates to ensure reliable data flow
+                                and smooth user interactions.</li>
+                            <li>Assisted in debugging, code reviews, and iterative feature delivery aligned with real
+                                product requirements.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 – 2026</div>
+                    <div class="timeline-content card">
+                        <h4>Bachelor of Technology in Computer Science Engineering</h4>
+                        <h5>Parul University, Vadodara</h5>
+                        <p style="margin-top: 10px;">Winner, The Graph-powered On-Campus Hackathon & Bootcamp. <br>
+                            Authored "Vision-Based Identity System" review paper.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header" style="margin-top: 60px;">
+                <span class="section-tag">#04</span>
+                <h3>Achievements</h3>
+            </div>
+
+            <div class="skills-grid" style="grid-template-columns: 1fr;">
+                <div class="skill-category card">
+                    <ul class="skill-list">
+                        <li>Winner, The Graph-powered On-Campus Hackathon & Bootcamp, Parul University.</li>
+                        <li>Authored a review paper titled “Vision-Based Identity System”.</li>
+                        <li>Completed 20 Day Impact Training by Hitbullseye.</li>
+                        <li>Certified in Cloud Computing and AI with AWS.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <span class="section-tag">#05</span>
+                <h3>Connect Controller</h3>
+            </div>
+
+            <div class="contact-wrapper card">
+                <p>Ready to collaborate on the next big title? Send a message.</p>
+                <a href="mailto:chauhankaran2305@gmail.com" class="email-link">chauhankaran2305@gmail.com</a>
+                <div class="contact-info">
+                    <span><i class="fa-solid fa-phone"></i> +91 8347202650</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Vadodara, Gujarat</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by <span class="accent">Karan Chauhan</span>. 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
