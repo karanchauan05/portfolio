@@ -16,8 +16,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
-    /* Custom cursor */
 }
 
 html {
@@ -31,31 +29,6 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
-}
-
-/* Custom Cursor */
-.cursor-dot,
-.cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 9999;
-    pointer-events: none;
-}
-
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--accent);
-}
-
-.cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--accent);
-    transition: width 0.2s, height 0.2s, background-color 0.2s;
 }
 
 /* Typography */
@@ -226,8 +199,7 @@ ul {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
-    cursor: none;
-    /* Let custom cursor handle hover visual */
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     z-index: 1;

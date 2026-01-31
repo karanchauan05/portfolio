@@ -1,37 +1,3 @@
-// Custom Cursor
-const cursorDot = document.getElementById("cursor-dot");
-const cursorOutline = document.getElementById("cursor-outline");
-
-window.addEventListener("mousemove", function (e) {
-    const posX = e.clientX;
-    const posY = e.clientY;
-
-    cursorDot.style.left = `${posX}px`;
-    cursorDot.style.top = `${posY}px`;
-
-    // Add a slight delay for the outline for a 'drag' feel
-    cursorOutline.animate({
-        left: `${posX}px`,
-        top: `${posY}px`
-    }, { duration: 500, fill: "forwards" });
-});
-
-// Add hover effect to interactive elements
-const interactiveElements = document.querySelectorAll('a, button, .project-card');
-interactiveElements.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-        cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-        cursorOutline.style.backgroundColor = 'rgba(0, 243, 255, 0.1)';
-        cursorDot.style.transform = 'translate(-50%, -50%) scale(0.5)';
-    });
-
-    el.addEventListener('mouseleave', () => {
-        cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-        cursorOutline.style.backgroundColor = 'transparent';
-        cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
-    });
-});
-
 // Scroll Reveal
 const observerOptions = {
     threshold: 0.1
